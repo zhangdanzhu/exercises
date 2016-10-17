@@ -19,7 +19,7 @@ typedef int BOOL;
 
 int gl_answer_num = 0;
 
-/*
+/**
 * @brief	判断填入的数是否符合规则
 * @arg		row		:int型，表示当前行
 * @arg		column	:int型，表示当前列
@@ -60,7 +60,7 @@ BOOL judge(int row, int column, int cells[9][9])
 	return 1;
 }
 
-/*
+/**
 * @brief	打印结果
 * @arg		cells	:int[9][9]型，当前整个数独盘面
 * @retval	void
@@ -92,7 +92,7 @@ void printCells(int cells[9][9])
 	printf("———————————————————\n");
 }
 
-/*
+/**
 * @brief	暴力搜索，递归
 * @arg		r	:int型，表示当前行
 * @arg		c	:int型，表示当前列
@@ -133,7 +133,7 @@ void try(int r, int c, int cells[9][9])
 	}
 }
 
-/*
+/**
 * @brief	main
 * @retval	int
 */
